@@ -51,7 +51,7 @@ namespace Pract11
             result2.Clear();
 
             string s1 = "aa aba abba abbba abca abea";
-            Regex regex1 = new Regex("ab{0,3}a", RegexOptions.IgnoreCase);
+            Regex regex1 = new ("ab{0,3}a");
             MatchCollection matches1 = regex1.Matches(s1);
             object[] array1 = new object[matches1.Count];
             matches1.CopyTo(array1, 0);
@@ -60,8 +60,8 @@ namespace Pract11
                 result1.Text += $"{array1[i]}" + " ";
             }
 
-            string s2 = "a1a a2a a3a a4a a5a aba aca";
-            Regex regex2 = new Regex("a[1-9]a", RegexOptions.IgnoreCase);
+            string s2 = "a1a a2a  a3a a4a a5a aba aca";
+            Regex regex2 = new("a[1-9]a");
             MatchCollection matches2 = regex2.Matches(s2);
             object[] array2 = new object[matches2.Count];
             matches2.CopyTo(array2, 0);
