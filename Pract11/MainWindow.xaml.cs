@@ -34,10 +34,10 @@ namespace Pract11
 
         private void О_Программе_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Дана строка 'aa aba abba abbba abca abea'. " +
-                "Напишите регулярное выражение, которое найдет строки aa, aba." +
-                "Напишите регулярное выражение, которое найдет строки следующего вида: " +
-                "по краям стоят буквы 'a', а между ними - цифра от 3-х до 7-ми");
+            MessageBox.Show("Дана строка 'aa aba abba abbba abca abea'."+
+            "Напишите регулярное выражение, которое найдет строки aa, aba, abba, abbba."+
+            "Дана строка 'a1a a2a a3a a4a a5a aba aca'. Напишите регулярное выражение,"+
+            "которое найдет строки, в которых по краям стоят буквы 'a', а между ними одна цифра.");
         }
         
         private void Выход_Click(object sender, RoutedEventArgs e)
