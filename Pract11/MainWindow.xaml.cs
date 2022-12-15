@@ -50,14 +50,14 @@ namespace Pract11
             result1.Clear();
             result2.Clear();
 
-            string s1 = "aa aba abba abbba abca abea";
-            Regex regex1 = new ("ab{0,3}a");
-            MatchCollection matches1 = regex1.Matches(s1);
-            object[] array1 = new object[matches1.Count];
-            matches1.CopyTo(array1, 0);
-            for (int i = 0; i < array1.Length; i++)
+            string s1 = "aa aba abba abbba abca abea";//создаем переменную с1 и записываем в нее нужную строчку
+            Regex regex1 = new ("ab{0,3}a");//создаем объект класса р..1 и пишем что нам надо найти 
+            MatchCollection matches1 = regex1.Matches(s1);// находим искомых значений 
+            object[] array1 = new object[matches1.Count];// создаем массив
+            matches1.CopyTo(array1, 0);// копируем его в матч1
+            for (int i = 0; i < array1.Length; i++)// проходимся по массиву
             {
-                result1.Text += $"{array1[i]}" + " ";
+                result1.Text += $"{array1[i]}" + " ";//записываем в результат полученные значения 
             }
 
             string s2 = "a1a a2a  a3a a4a a5a aba aca";
